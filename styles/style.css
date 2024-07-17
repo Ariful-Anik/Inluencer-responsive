@@ -57,6 +57,7 @@ body {
   justify-content: space-between;
   /* max-width: 100%; */
   min-height: 614px;
+  margin: 0 auto;
   align-items: center;
   margin-bottom: 70px;
 }
@@ -67,7 +68,7 @@ body {
 .banner-img {
   width: 50%;
   height: 50%;
-  margin: 0 50px;
+  margin-left: 205px;
   display: flex;
   justify-content: center;
   background-image: url("../images/Circle design.svg");
