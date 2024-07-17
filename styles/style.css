@@ -18,7 +18,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  
+
   align-items: center;
 }
 
@@ -74,11 +74,9 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 
 .banner-img img {
- 
   padding: 30px 33px 31px 2px;
 }
 
@@ -163,33 +161,32 @@ body {
   margin-bottom: 30px;
 }
 
-.popular-container {           
+.popular-container {
   margin-left: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   position: relative;
-  
 }
 
-.popular-btn{
+.popular-btn {
   width: 99px;
-height: 24px;
-display: flex;
-color: rgba(224, 44, 109, 0.87);
-font-family: "Poppins";
-font-size: 1rem;
-background-color: #FFFFFF;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: left;
-border: none;
-align-items: center;
-justify-content: center;
-position: absolute;
-margin-left: 1070px;
-margin-top: 1580px;
+  height: 24px;
+  display: flex;
+  color: rgba(224, 44, 109, 0.87);
+  font-family: "Poppins";
+  font-size: 1rem;
+  background-color: #ffffff;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 1070px;
+  margin-top: 1580px;
 }
 
 /* .popular-container {
@@ -254,73 +251,151 @@ margin-top: 1580px;
   margin-left: 8px;
 }
 
+/* featured */
 
+.featured {
+  max-width: 1250px;
+  min-height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.featured-info {
+  max-width: 610px;
+  min-height: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.featured-img{
+  max-height: 270px
+  
+}
+.featured-img img{
+  height: 100%;
+  width: 100%;
+}
+
+.featured-info h2 {
+  color: rgb(10, 8, 38);
+  font-family: "Poppins";
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.featured-info p {
+  color: rgb(108, 108, 108);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.featured-info button{
+  width: 155px;
+height: 44px;
+padding: 10px 24px 10px 24px;
+background: rgb(224, 44, 109);
+color: rgb(255, 255, 255);
+
+font-size: 1rem;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+}
 /* ----------responsive----------- */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   /* -----navbar---------- */
 
-  .navbar{
+  .navbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
   }
-  .nav-title{
+  .nav-title {
     margin: 0;
   }
-  .nav-elements{
+  .nav-elements {
     flex-direction: column;
     align-items: center;
     margin: 5px auto;
   }
- /* ---------banner-------- */
- .banner{
-  flex-direction: column-reverse;
- }
- .banner-text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
+  /* ---------banner-------- */
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 
-.banner-img{
-  width: 80%;
-  height: 70%;
-  margin: 30px 74px 24px 74px; 
-  background-size: contain;
- 
-}
- .banner-img img{
-  width: 100%;
-  height: 100%;
-  margin: 30px 74px 14px 74px;
-  
- }
+  .banner-img {
+    width: 80%;
+    height: 70%;
+    margin: 30px 74px 24px 74px;
+    background-size: contain;
+  }
+  .banner-img img {
+    width: 100%;
+    height: 100%;
+    margin: 30px 74px 14px 74px;
+  }
 
- .banner h1{
-  font-size: 1.75rem;
-  text-align: center;
-  line-height: 42px;
-  
- }
- .banner p{
-  text-align: center;
- }
+  button {
+    cursor: pointer;
+  }
+  .banner h1 {
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 42px;
+  }
+  .banner p {
+    text-align: center;
+  }
   /* -----------popular container---------- */
 
-  .popular-container{
-    grid-template-columns: repeat(1,1fr);
+  .popular-container {
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     margin-left: 30px;
   }
-  .popular-btn{
+  .popular-btn {
     position: initial;
-    margin: 0 120px
+    margin: 0 120px;
   }
 
+  /* ---------featured--------- */
+  .featured{
+    flex-direction: column-reverse;                    ;
+  }
+  .featured-info{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .featured-info h2, .featured-info p{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .featured-img{
+    margin-top: 15px;
+    padding: 30px;
+  }
+  
+ 
 }
