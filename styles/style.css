@@ -145,9 +145,9 @@ body {
 /* ---------popular collection--------- */
 
 .popular-collection {
-  min-height: 1662px;
+  min-height: 1710px;
   max-width: 1200px;
-
+  position: relative;
   border: 1px solid rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   margin-top: 100px;
@@ -168,7 +168,28 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  position: relative;
   
+}
+
+.popular-btn{
+  width: 99px;
+height: 24px;
+display: flex;
+color: rgba(224, 44, 109, 0.87);
+font-family: "Poppins";
+font-size: 1rem;
+background-color: #FFFFFF;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+border: none;
+align-items: center;
+justify-content: center;
+position: absolute;
+margin-left: 1070px;
+margin-top: 1580px;
 }
 
 /* .popular-container {
@@ -296,6 +317,10 @@ body {
     grid-template-columns: repeat(1,1fr);
     justify-content: center;
     margin-left: 30px;
+  }
+  .popular-btn{
+    position: initial;
+    margin: 0 120px
   }
 
 }
